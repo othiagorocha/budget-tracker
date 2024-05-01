@@ -33,8 +33,6 @@ export function CurrencyComboBox() {
     queryFn: () => fetch("/api/user-settings").then((res) => res.json()),
   });
 
-  console.log(userSettings);
-
   if (isDesktop) {
     return (
       <Popover open={open} onOpenChange={setOpen}>
